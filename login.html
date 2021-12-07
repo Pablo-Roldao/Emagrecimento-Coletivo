@@ -13,9 +13,33 @@
 
 </head>
 
-<body>
+<body class="text-uppercase">
 
-    <form class=" text-success text-uppercase text-center shadow bg-dark bg-opacity-80 p-5 rounded fw-bold" action="login.php" method="post">
+    <nav class="navbar navbar-expand bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand h5" href="home.php">
+                <img src="imagens/logo-emagrecimentocoletivo.png" alt="Emagrecimento Coletivo" class="rounded-circle"
+                    id="navbar-logo"> Emagrecimento Coletivo
+            </a>
+
+            <div class="collapse navbar-collapse">
+
+                <ul class="navbar-nav h6">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="whoarewe.php">Quem somos?</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <form class=" text-success text-center shadow bg-dark bg-opacity-80 p-5 rounded fw-bold"
+        action="login.php" method="post">
 
         <h1>Entrar</h1>
         <br>
@@ -27,9 +51,10 @@
         <input type="password" class="form-control" name="senha" placeholder="Insira a senha" required>
 
         <!--<input type="checkbox" class="form-check-input" id="checkRemember" name="rememberme" value="rememberme" checked>
-        <label class="form-check-label">Lembre-se de mim</label>-->
+        <label class="form-check-label">Lembre-se de mim</label>--> <!--Para um futuro...-->
 
         <br>
+        <p>Ainda não possui uma conta? <a href="signup.php">Cadastre-se.</a></p>
         <br>
         <button type="submit" class="btn btn-success btn-lg" name="submeter">ENTRAR</button>
 

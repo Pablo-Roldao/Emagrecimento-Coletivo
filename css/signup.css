@@ -1,3 +1,16 @@
+#navbar-logo {
+    width: 5%;
+}
+
+.navbar-brand {
+    color: #00B74A;
+}
+
+.nav-item a {
+    color: #00B74A;
+    padding: 1rem;
+}
+
 body {
     background-image: url(../imagens/gabin-vallet-J154nEkpzlQ-unsplash-green.jpg);
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="imagens/logo-ifpe.png" type="image/x-icons">
+    <title>Emagrecimento coletivo</title>
+</head>
+
+<body class="text-uppercase">
+
+    <nav class="navbar navbar-expand bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand h5" href="home.php">
+                <img src="imagens/logo-emagrecimentocoletivo.png" alt="Emagrecimento Coletivo" class="rounded-circle" id="navbar-logo"> Emagrecimento Coletivo
+            </a>
+
+            <div class="collapse navbar-collapse">
+
+                <ul class="navbar-nav h6">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="whoarewe.php">Quem somos?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="profile.php">
+                            <?php
+                            include "config.php";
+
+                            $sql = "SELECT nome FROM usuarios WHERE matricula='" . $_SESSION['matricula'] . "'";
+                            $result = mysqli_query($conn, $sql);
+                            $row = mysqli_fetch_array($result);
+                            echo $row[0];
+                            ?>
+                        </a>
+                    </li>
+
+                    <?php
+
+
+                    if (/*!isset($_SESSION['matricula']) &&*/$_SESSION['matricula'] == "00000000000000") {
+                        echo "<li class=\"nav-item\">
+                                <a class=\"nav-link\" aria-current=\"page\" href=\"classes.php\">Turmas</a>
+                            </li>";
+                    }
+
+                    if (!isset($_SESSION['matricula'])) {
+                        echo "<li class=\"nav-item\">
+                                <a class=\"nav-link\" aria-current=\"page\" href=\"signup.php\">Cadastro</a>
+                            </li>
+                            <li class=\"nav-item\">
+                                <a class=\"nav-link\" aria-current=\"page\" href=\"login.html\">Entrar</a>
+                            </li>";
+                    } else {
+                        echo "<li class=\"nav-item\">
+                                 <a class=\"nav-link\" aria-current=\"page\" href=\"logout.php\">Sair</a>
+                            </li>";
+                    }
+                    ?>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="conteudo" class="text-center bg-dark bg-opacity-75 p-5 rounded shadow-lg">
+
+        <h3>Bem vindo ao Emagrecimento Coletivo!</h3>
+
+    </div>
+
+
+</body>
+
+</html>
