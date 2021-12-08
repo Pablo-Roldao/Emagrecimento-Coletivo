@@ -72,12 +72,51 @@
 
     </nav>
 
-    <div id="conteudo" class="text-center bg-dark bg-opacity-75 p-5 rounded shadow-lg">
+    <div id="conteudo" class="text-sucess text-center bg-dark bg-opacity-75 p-5 rounded shadow-lg">
 
         <h3>Bem vindo ao Emagrecimento Coletivo!</h3>
 
     </div>
 
+    <p id="apresentacao-carrosel" class="text-center bg-dark bg-opacity-75 rounded shadow-lg fw-bold" >Vídeos para aprender sobre o emagrecimento coletivo:</p>
+    <div id="carouselVideo" class="carousel slide rounded shadow-lg" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselVideo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/walking-g459c72270_1920.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vídeo 01</h5>
+                    <p>Legenda 01...</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/gabin-vallet-J154nEkpzlQ-unsplash.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vídeo 02...</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
 </body>
 
