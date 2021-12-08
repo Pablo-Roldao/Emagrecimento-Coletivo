@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 #navbar-logo {
     width: 5%;
 }
@@ -10,3 +12,8 @@
     color: #00B74A;
     padding: 1rem;
 }
+
+body {
+    background-image: url(../imagens/group-g50d5a0d8e_1920-edit.jpg);
+}
+

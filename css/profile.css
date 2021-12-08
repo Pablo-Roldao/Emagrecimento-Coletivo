@@ -1,16 +1,29 @@
 #navbar-logo {
-    width: 5%;
+  width: 5%;
 }
 
 .navbar-brand {
-    color: #00B74A;
+  color: #00B74A;
 }
 
 .nav-item a {
-    color: #00B74A;
-    padding: 1rem;
+  color: #00B74A;
+  padding: 1rem;
 }
 
 a {
-    color: #00B74A;
+  color: #00B74A;
+}
+
+body {
+  background-image: url(../imagens/anupam-mahapatra-Vz0RbclzG_w-unsplash-green.jpg)
+}
+
+#profile-information {
+  width: 50%;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
