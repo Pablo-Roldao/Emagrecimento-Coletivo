@@ -15,7 +15,7 @@
 
         <div class="container-fluid">
 
-            <a class="navbar-brand h5" href="home.html">
+            <a class="navbar-brand h5" href="home.php">
                 <img src="imagens/logo-emagrecimentocoletivo.png" alt="Emagrecimento Coletivo" class="rounded-circle" id="navbar-logo"> Emagrecimento Coletivo
             </a>
 
@@ -28,7 +28,7 @@
                 </ul>
 
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="profile.html">
+                    <a class="nav-link" aria-current="page" href="profile.php">
                         <?php
                         include "config.php";
 

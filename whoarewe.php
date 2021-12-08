@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand bg-dark">
+    <nav class="navbar navbar-expand bg-dark text-uppercase">
 
         <div class="container-fluid">
 
@@ -70,7 +70,7 @@
 
     <br>
 
-    <div>
+    <div name="people">
 
         <p class="text-success shadow bg-dark bg-opacity-60 p-5 text-justify">O respectivo projeto é um trabalho indicado pelo professor Humberto Beltrão a turma do 3° técnico em informática tarde na matéria Linguagem de Programação Web no IFPE Campus Garanhuns. O trabalho consiste na criação de algum projeto relacionado a uma matéria básica do ensino médio, onde o tema foi sorteado em paralelo à alguma outra disciplina paga pelos alunos (geografia, matemática,...). <br> <br>Realizada em trios, o respectivo projeto a seguir foi realizado pelos alunos Maria Pontes, Pablo Santos e Paulo Cardoso cuja matéria a ser o tema foi Educação física com o professor Fernando César. <br> <br>Em conversa foi decidido criar o projeto emagrecimento coletivo que consiste em solicitar o email, nome, sexo, matrícula, altura e peso para calcular o IMC, a partir disso fazer uma média e uma senha para poder ter acesso a plataforma onde será possível postar resultados e acompanhar colegas.</p>
 
