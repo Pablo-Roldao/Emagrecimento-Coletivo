@@ -10,3 +10,16 @@
     color: #00B74A;
     padding: 1rem;
 }
+
+body {
+    background-image: url(../imagens/anupam-mahapatra-Vz0RbclzG_w-unsplash-green.jpg)
+  }
+
+#class-information {
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}

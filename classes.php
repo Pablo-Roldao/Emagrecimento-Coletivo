@@ -52,6 +52,65 @@
         </div>
 
     </nav>
+
+    <br>
+
+    <div id="class-information"name="3ºTI - Tarde" class="text-success shadow bg-dark bg-opacity-80 p-5 rounded fw-bold">
+        <p>
+            3ºTI - Tarde
+            <br>
+            Alunos:
+            <?php
+            include "config.php";
+
+            $sql = "SELECT altura FROM usuarios WHERE codigo_turma='123456'";
+            $result = mysqli_query($conn, $sql);
+            $rowAltura = mysqli_fetch_array($result);
+
+            $sql = "SELECT peso FROM usuarios WHERE codigo_turma='123456'";
+            $result = mysqli_query($conn, $sql);
+            $rowPeso = mysqli_fetch_array($result);
+
+            $sql = "SELECT nome FROM usuarios WHERE codigo_turma='123456'";
+            $result = mysqli_query($conn, $sql);
+            $rowNome = mysqli_fetch_array($result);
+
+            for ($c = 0; $c < count($rowNome) - 1; $c++) {
+                echo "<p>" . $rowNome[$c] . ", IMC: " . round(($rowPeso[$c] / ($rowAltura[$c]/100 * $rowAltura[$c]/100)), 3) . "</p>";
+            }
+            ?>
+        </p>
+    </div>
+
+    <br>
+
+    <div id="class-information" name="3ºTMA - Tarde" class="text-success shadow bg-dark bg-opacity-80 p-5 rounded fw-bold">
+        <p>
+            3ºTI - Tarde
+            <br>
+            Alunos:
+            <?php
+            include "config.php";
+
+            $sql = "SELECT altura FROM usuarios WHERE codigo_turma='654321'";
+            $result = mysqli_query($conn, $sql);
+            $rowAltura = mysqli_fetch_array($result);
+
+            $sql = "SELECT peso FROM usuarios WHERE codigo_turma='654321'";
+            $result = mysqli_query($conn, $sql);
+            $rowPeso = mysqli_fetch_array($result);
+
+            $sql = "SELECT nome FROM usuarios WHERE codigo_turma='654321'";
+            $result = mysqli_query($conn, $sql);
+            $rowNome = mysqli_fetch_array($result);
+
+            for ($c = 0; $c < count($rowNome) - 1; $c++) {
+                echo "<p>" . $rowNome[$c] . ", IMC: " . round(($rowPeso[$c] / ($rowAltura[$c]/100 * $rowAltura[$c]/100)), 3) . "</p>";
+            }
+            ?>
+        </p>
+    </div>
+
 </body>
 
 </html>
