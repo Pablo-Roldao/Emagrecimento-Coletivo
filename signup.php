@@ -81,6 +81,9 @@
             ?>
         </select>--><!--Pra o futuro-->
 
+        <label for="codigo-turma" class="form-label"><b>Código da turma</b></label>
+        <input type="text" class="form-control" placeholder="Insira o código da turma" name="codigo_turma" required>
+
         <label for="senha" class="form-label"><b>Senha</b></label>
         <input type="password" class="form-control" placeholder="Insira a senha" name="senha" required>
 

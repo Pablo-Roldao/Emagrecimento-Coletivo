@@ -11,9 +11,10 @@ $altura = $_POST['altura'];
 $sexo = $_POST['sexo'];
 $data_nascimento = $_POST['data_nascimento'];
 $senha = $_POST['senha'];
+$codigo_turma = $_POST['codigo_turma'];
 
 //inserindo os dados no BD
-$sql = "INSERT INTO usuarios (nome, matricula, email, peso, altura, sexo, data_nascimento, senha) VALUES ('$nome', '$matricula', '$email', '$peso', '$altura', '$sexo', '$data_nascimento', '$senha')";
+$sql = "INSERT INTO usuarios (nome, matricula, email, peso, altura, sexo, data_nascimento, senha, codigo_turma) VALUES ('$nome', '$matricula', '$email', '$peso', '$altura', '$sexo', '$data_nascimento', '$senha', '$codigo_turma')";
 if ($conn->query($sql) === TRUE) {
     echo "Novo usuário cadastrado com sucesso.";
     header("location: home.php");
