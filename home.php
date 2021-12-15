@@ -85,10 +85,10 @@
                 <iframe width="660" height="394" src="https://www.youtube.com/embed/wwRY3o7eoLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="carousel-item">
-                <iframe width="700" height="394" src="https://www.youtube.com/embed/sQeolmlMFlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="660" height="394" src="https://www.youtube.com/embed/sQeolmlMFlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="carousel-item">
-                <iframe width="700" height="394" src="https://www.youtube.com/embed/F2d6nNjxjbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="660" height="394" src="https://www.youtube.com/embed/F2d6nNjxjbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
